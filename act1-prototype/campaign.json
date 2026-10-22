@@ -1,0 +1,14 @@
+{
+  "id": "act_01",
+  "title": "The Last Frontier",
+  "chapter": "The Awakening",
+  "estimatedMinutes": 120,
+  "missions": [
+    {"id":"act01_m01","title":"Defend the Village","objectives":["SURVIVE","PROTECT_VILLAGE","DEFEAT_WAVES"],"reward":{"xp":250,"gold":100}},
+    {"id":"act01_m02","title":"Secure the Aether Mine","objectives":["REACH_MINE","HOLD_POSITION"],"reward":{"xp":300,"gold":150,"aether":25}},
+    {"id":"act01_m03","title":"The Machine Beneath","objectives":["DEFEAT_ELITES","DEFEAT_BOSS","COLLECT_LOOT"],"reward":{"xp":500,"gold":250,"technology":"aether_mining","unique":"crown_fragment"}}
+  ],
+  "enemyFamilies":["frontier_raider","iron_scout","aether_drone"],
+  "boss":{"id":"iron_scout_commander","health":450,"phases":2,"loot":["dominion_rifle","scout_armor","aether_shard","crown_fragment"]},
+  "completion":{"unlockAct":"act_02","unlockTechnology":"aether_mining","campaignFlag":"first_aether_crystal_found"}
+}
