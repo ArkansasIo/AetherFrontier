@@ -2,23 +2,34 @@
 
 ## Project
 
-Aether Frontier is an expanded and modified game project maintained by ArkansasIo.
+Aether Frontier is an expanded and redesigned game project maintained by ArkansasIo.
 
 Copyright (C) 2026 ArkansasIo / Aether Frontier Project.
 
-## Third-Party and Upstream Software
+## Source-Code Licensing
 
-This repository contains code and other material derived from third-party
-GPL-licensed software. Applicable upstream copyright notices and license terms
-are retained for the covered portions of the project.
+This repository may contain original Aether Frontier code, modified GPL-derived
+code, and other third-party material. The license for each portion is determined
+by its applicable source-file notice, directory notice, or project license.
 
-The applicable GNU General Public License, version 3, is provided in `LICENSE`.
-The Aether Frontier project-specific licensing statement is provided in
-`LICENSE-AETHERFRONTIER`.
+The GNU General Public License, version 3, is provided in `LICENSE` for
+GPL-covered portions. The Aether Frontier project licensing policy is provided
+in `LICENSE-AETHERFRONTIER`.
+
+## Commercial Distribution
+
+Aether Frontier may be commercially distributed. Commercial distribution does
+not remove the rights or obligations applicable to GPL-covered portions.
 
 ## Attribution
 
-Removal of third-party branding from the Aether Frontier user interface or
-project presentation does not remove copyright or license obligations for
-third-party code. Required legal notices remain applicable to the relevant
-source files and distributions.
+Aether Frontier may replace third-party branding in its own user interface and
+presentation. Such rebranding does not remove copyright, license, or attribution
+requirements that apply to third-party source material.
+
+## Original Work
+
+New Aether Frontier systems, rewritten code, original assets, documentation,
+and other original contributions may be separately identified and licensed by
+ArkansasIo. A redesign or rewrite does not by itself change the license of code
+that remains derivative of GPL-covered material.
