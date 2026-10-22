@@ -1,0 +1,26 @@
+{
+  "theme": "Aether Frontier — medieval science-fantasy pixel RTS/RPG",
+  "version": "0.1.0",
+  "assets": [
+    {"id":"commander-knight","file":"commander-knight.svg","category":"characters"},
+    {"id":"aether-crystal","file":"aether-crystal.svg","category":"resources"},
+    {"id":"frontier-village","file":"frontier-village.svg","category":"buildings"},
+    {"id":"aether-mine","file":"aether-mine.svg","category":"buildings"},
+    {"id":"iron-scout","file":"iron-scout.svg","category":"bosses"},
+    {"id":"raider","file":"raider.svg","category":"enemies"},
+    {"id":"aether-reactor","file":"aether-reactor.svg","category":"technology"},
+    {"id":"castle","file":"castle.svg","category":"buildings"},
+    {"id":"sword","file":"sword.svg","category":"weapons"},
+    {"id":"aether-orb","file":"aether-orb.svg","category":"items"},
+    {"id":"health-potion","file":"health-potion.svg","category":"items"},
+    {"id":"skill-attack","file":"skill-attack.svg","category":"skills"},
+    {"id":"skill-shield","file":"skill-shield.svg","category":"skills"},
+    {"id":"forest","file":"forest.svg","category":"biomes"},
+    {"id":"mountains","file":"mountains.svg","category":"biomes"},
+    {"id":"aether-portal","file":"aether-portal.svg","category":"dungeons"},
+    {"id":"cavalry","file":"cavalry.svg","category":"army"},
+    {"id":"aether-tank","file":"aether-tank.svg","category":"army"},
+    {"id":"guild-banner","file":"guild-banner.svg","category":"guilds"},
+    {"id":"world-map","file":"world-map.svg","category":"maps"}
+  ]
+}
