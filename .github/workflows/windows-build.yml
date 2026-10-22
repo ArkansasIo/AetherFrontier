@@ -1,0 +1,59 @@
+name: Windows Desktop Build
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+
+permissions:
+  contents: read
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Fetch Arc
+        shell: pwsh
+        run: git clone --depth=1 --branch=master https://github.com/Anuken/Arc ../Arc
+
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v6
+
+      - name: Build desktop JAR
+        shell: pwsh
+        run: ./gradlew.bat desktop:dist -Pbuildversion=8.0-aether
+
+      - name: Package Windows application
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $jar = Get-ChildItem 'desktop/build/libs/*.jar' | Where-Object { $_.Name -notmatch 'sources|javadoc' } | Select-Object -First 1
+          if (-not $jar) { throw 'Desktop JAR was not produced.' }
+          New-Item -ItemType Directory -Force -Path 'build/windows-input' | Out-Null
+          Copy-Item $jar.FullName 'build/windows-input/AetherFrontier.jar'
+          jpackage `
+            --type app-image `
+            --name AetherFrontier `
+            --input build/windows-input `
+            --main-jar AetherFrontier.jar `
+            --dest build/windows `
+            --vendor 'ArkansasIo' `
+            --app-version '8.0'
+          Compress-Archive -Path 'build/windows/AetherFrontier' -DestinationPath 'build/AetherFrontier-Windows-x64.zip' -Force
+
+      - name: Upload Windows executable bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: AetherFrontier-Windows-x64
+          path: build/AetherFrontier-Windows-x64.zip
+          if-no-files-found: error
