@@ -2,18 +2,44 @@ AETHER FRONTIER PROJECT LICENSE
 
 Copyright (C) 2026 ArkansasIo / Aether Frontier Project.
 
-Aether Frontier contains original code, artwork, game systems, documentation,
-and other original contributions developed for the Aether Frontier project.
+1. SCOPE
 
-Unless a file or directory states otherwise, original Aether Frontier
-contributions are distributed under the GNU General Public License, version 3
-or any later version.
+This project contains both original Aether Frontier contributions and code,
+assets, or other material derived from third-party software. This file applies
+only to original Aether Frontier contributions where the applicable source file
+or directory does not specify another license.
 
-Aether Frontier also contains modified and/or derived components from
-third-party GPL-licensed software. Those components remain subject to their
-applicable copyright notices and license terms. This project-specific license
-does not remove, replace, or restrict rights granted by those licenses.
+2. ORIGINAL AETHER FRONTIER CODE
 
-Aether Frontier-specific trademarks, names, logos, artwork, and branding are
-not granted trademark rights by this license. Any third-party trademarks and
-copyrights remain the property of their respective owners.
+Original Aether Frontier code may be modified, redesigned, rewritten,
+refactored, combined, and commercially distributed by the copyright holder,
+subject to the license actually stated for that code and subject to the rights
+of any third-party material from which it may be derived.
+
+3. GPL-DERIVED CODE
+
+Where Aether Frontier code is derived from or constitutes a modification of
+GPL-licensed software, the applicable GPL license and copyright notices remain
+in force. This project license does not convert GPL-covered material into
+proprietary material or remove any rights granted by the GPL.
+
+4. COMMERCIAL USE
+
+Nothing in this project license prohibits commercial use of Aether Frontier.
+Commercial distribution is permitted to the extent allowed by the applicable
+licenses. GPL-covered portions remain subject to the GNU General Public
+License, including its requirements concerning redistribution and source code.
+
+5. ASSETS AND BRANDING
+
+Aether Frontier artwork, audio, models, documentation, names, logos, and other
+original assets may have separate licensing terms. Unless a specific asset
+states otherwise, ownership and licensing of original Aether Frontier assets
+remain with the copyright holder. This license does not grant trademark rights
+in the Aether Frontier name or logos.
+
+6. THIRD-PARTY RIGHTS
+
+Third-party copyrights, trademarks, licenses, and notices remain applicable to
+the material to which they relate. Nothing in this file limits rights that a
+third-party license grants to recipients.
